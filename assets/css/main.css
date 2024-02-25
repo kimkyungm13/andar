@@ -192,3 +192,44 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.best .tab-list .btn-allview {
+    margin: 0 16px 60px;
+    text-align: center;
+}
+
+.best .tab-list .btn-allview a {
+    padding: 16px 0;
+    border: 1px solid #C8CBD2;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best .tab-list .btn-allview a:after {
+    content: url(/assets/images/arrow_right.png);
+}
+
+.best .tab-list .btn-allview a span {
+    color: #C86733;
+    margin-right: 5px;
+}
+
+.brand-story {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.brand-story .one_banner {
+    display: block;
+    color: #fff;
+    padding: 36px 20px;
+    background-color: #C86733;
+}

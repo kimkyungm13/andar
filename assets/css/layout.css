@@ -191,6 +191,10 @@ header.wheel .menu-wrap .menu-nav.active {
     display: block;
 }
 
+header.wheel .menu-wrap .menu-nav.none {
+    display: none;
+}
+
 header.wheel .menu-wrap .menu-list a {
     display: inline-block;
     font-size: 16px;
