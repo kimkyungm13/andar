@@ -1,0 +1,272 @@
+@import url(/assets/css/reset.css);
+@import url(/assets/css/common.css);
+@import url(/assets/css/fonts.css);
+
+body {
+    position: relative;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.top-banner {
+    background: #000;
+}
+
+.top-banner a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
+
+.top-banner a .arrow_wh {
+    display: block;
+    margin-left: 5px;
+    width: 8px;
+    height: 13px;
+    background: url(/assets/images/ico-arrow.png) no-repeat;
+}
+
+.container {}
+
+header {
+    position: relative;
+}
+
+
+
+header .gnb {
+    display: flex;
+    position: fixed;
+    top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    padding: 0 5px;
+}
+
+header .gnb .side,
+header .gnb .user {
+    display: flex;
+    gap: 10px;
+}
+
+header .gnb h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .gnb.wheel {
+    top: 0;
+    height: 100px;
+    background: #fff;
+    align-items: flex-start;
+    padding-top: 15px;
+
+}
+
+
+header .gnb h1 a {
+    display: block;
+    width: 87px;
+    height: 23px;
+    margin: 0 auto;
+    background: url('/assets/images/img-logo-w.svg') no-repeat
+}
+
+
+
+header .gnb .category:after {
+    width: 22px;
+    height: 18px;
+    display: block;
+    content: '';
+    overflow: hidden;
+    background: url("/assets/images/ico-cate_w.svg") no-repeat 0 0;
+}
+
+header .gnb .search:after {
+    width: 20px;
+    height: 21px;
+    display: block;
+    content: '';
+    overflow: hidden;
+    background: url("/assets/images/ico-search_w.svg") no-repeat 0 0;
+}
+
+header .gnb .info:after {
+    width: 20px;
+    height: 21px;
+    display: block;
+    content: '';
+    overflow: hidden;
+    background: url("/assets/images/ico-user_w.svg") no-repeat 0 0;
+}
+
+header .gnb .order:after {
+    width: 20px;
+    height: 21px;
+    display: block;
+    content: '';
+    overflow: hidden;
+    background: url("/assets/images/ico-shop_w.svg") no-repeat
+}
+
+
+
+
+header.wheel {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+header.wheel .gnb {
+    position: relative;
+    top: 0;
+}
+
+header.wheel .menu-wrap {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+header.wheel .menu-wrap .menu-list {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-more {
+    display: none;
+}
+
+.menu-more.active {
+    display: block
+}
+
+.menu-more.active .menu-all {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    padding: 6px 12px;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: #F6F6F6;
+    border-top: 1px solid #dcdcdc;
+}
+
+.menu-more.active .menu-all a {
+    display: inline-block;
+    padding: 8px 17px;
+    margin: 3px 3px;
+    border: 1px solid #ebebeb;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    letter-spacing: -0.05em;
+}
+
+.all-more {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+header.wheel .menu-wrap .menu-nav.active {
+    display: block;
+}
+
+header.wheel .menu-wrap .menu-list a {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    line-height: 23px;
+    letter-spacing: -0.05em;
+    color: #333;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.menu-more .menu-tit {
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    width: 100%;
+    padding: 11px 16px;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+}
+
+header.wheel h1 a {
+    background: url('/assets/images/img-logo-b.svg') no-repeat
+}
+
+header.wheel .category:after {
+    background: url("/assets/images/ico-cate.svg") no-repeat 0 0;
+}
+
+header.wheel .search:after {
+
+    background: url("/assets/images/ico-search.svg") no-repeat 0 0;
+}
+
+header.wheel .info:after {
+
+    background: url("/assets/images/ico-user.svg") no-repeat 0 0;
+}
+
+header.wheel .order:after {
+
+    background: url("/assets/images/ico-shop.svg") no-repeat
+}
+
+header .menu-wrap {
+    display: none;
+}
+
+.left-wrapper {}
+
+.left-menu {
+    width: 80%;
+    height: 100vh;
+    transition: .3s;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: translateX(-100%);
+}
+
+.left-menu.active {
+    transform: translateX(0);
+}
+
+.dimmed {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dimmed.active {
+    opacity: 1;
+    visibility: visible
+}

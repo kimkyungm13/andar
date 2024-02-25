@@ -1,0 +1,436 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Gilroy', 'NotoSansKR', Malgun Gothic, '맑은 고딕', Dotum, '돋움', sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body,
+code {
+    color: #333;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    min-width: 320px;
+    word-break: break-all;
+    -webkit-text-size-adjust: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-top: -1px;
+    vertical-align: top;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    vertical-align: top;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=button],
+input[type=search],
+input[type=tel],
+input[type=number],
+input[type=email],
+textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+code {
+    min-width: 320px;
+    font-size: 13px;
+    line-height: 1.2em;
+    color: #1b1b1b;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+code {
+    background: none;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+img,
+fieldset {
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+hr.layout {
+    display: none;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+ins {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border: 0 none;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table caption {
+    display: none;
+}
+
+th,
+td {
+    border: 0;
+    line-height: 18px;
+}
+
+legend {
+    height: 0;
+    width: 0;
+    display: block;
+    text-indent: -9999em;
+}
+
+label {
+    cursor: pointer;
+}
+
+object,
+del,
+sub,
+var {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+input,
+textarea,
+select {
+    max-width: 100%;
+    font-size: 13px;
+    font-family: 'Nanum Gothic', Helvetica, Arial, sans-serif;
+    color: #333;
+    vertical-align: middle;
+    outline: 0;
+    border-radius: 0;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=tel],
+textarea {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: inherit;
+    color: #353535;
+    border: 1px solid #d7d5d5;
+    border-radius: 2px;
+    outline-style: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=tel] {
+    height: 29px;
+}
+
+input[type="file"] {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+input[type="button"],
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="image"],
+textarea {
+    -webkit-appearance: none;
+}
+
+select {
+    max-width: 100%;
+    height: 29px;
+    margin: 0;
+    padding: 0 20px 0 8px;
+    line-height: 29px;
+    font-size: 13px;
+    color: #333;
+    word-break: break-all;
+    font-weight: inherit;
+    border: 1px solid #d7d5d5;
+    border-radius: 0;
+    background: #fff url("//img.echosting.cafe24.com/skin/mobile/common/ico_select.gif") no-repeat 100% 49%;
+    background-size: auto 40px;
+    -webkit-appearance: none;
+}
+
+select.disabled,
+select:disabled,
+textarea.disabled,
+textarea:disabled {
+    color: #bcbcbc;
+}
+
+textarea {
+    resize: none;
+    line-height: 1.2em;
+}
+
+textarea.disabled {
+    background-color: #ffffff;
+    color: #bfbfbf;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 0;
+    background: url("//img.echosting.cafe24.com/skin/mobile/common/bg_checkbox.png") no-repeat 0 0;
+    background-size: 18px 18px;
+    -webkit-appearance: none;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    border: 0;
+    border-radius: 50%;
+    background: url("//img.echosting.cafe24.com/skin/mobile/common/bg_radio.png") no-repeat 0 0;
+    background-size: 18px 18px;
+    -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url("//img.echosting.cafe24.com/skin/mobile/common/bg_checkbox_checked.png");
+    -webkit-appearance: none;
+}
+
+input[type="radio"]:checked {
+    background-image: url("//img.echosting.cafe24.com/skin/mobile/common/bg_radio_checked.png");
+    -webkit-appearance: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 7px 0 0;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=radio]+label,
+input[type=checkbox]+label {
+    margin: 0 7px 0 4px;
+}
+
+label input[type=radio],
+label input[type=checkbox] {
+    margin: 0 4px 0 0;
+}
+
+label:last-child,
+input[type=radio]+label:last-child,
+input[type=checkbox]+label:last-child {
+    margin-right: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
