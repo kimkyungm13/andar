@@ -148,6 +148,8 @@ header.wheel .menu-wrap .menu-list {
 
 .menu-more {
     display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .menu-more.active {
@@ -189,10 +191,13 @@ header.wheel .menu-wrap .menu-list {
 
 header.wheel .menu-wrap .menu-nav.active {
     display: block;
+    max-height: 200px;
+
 }
 
 header.wheel .menu-wrap .menu-nav.none {
     display: none;
+
 }
 
 header.wheel .menu-wrap .menu-list a {
@@ -272,5 +277,6 @@ header .menu-wrap {
 
 .dimmed.active {
     opacity: 1;
+    z-index: 2;
     visibility: visible
 }

@@ -1,3 +1,5 @@
+history.scrollRestoration = "manual"
+
 // 마우스 휠 이벤트에 대한 핸들러 추가
 window.addEventListener('wheel', function (event) {
     if (event.deltaY > 0) {
