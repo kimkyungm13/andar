@@ -141,9 +141,32 @@ header.wheel .menu-wrap {
     background: #fff;
 }
 
-header.wheel .menu-wrap .menu-list {
+header.wheel .menu-wrap .menu-list,
+header.wheel .menu-wrap .menu-tit {
     display: flex;
     gap: 10px;
+    padding: 11px 0 11px 15px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background: #fff;
+    width: calc(100% - 33px);
+    white-space: nowrap;
+}
+
+header.wheel .menu-wrap .all-more {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(/assets/images/ico-mopen.png) no-repeat;
+    background-size: 12px auto;
+    background-position: center;
+}
+
+header.wheel .menu-wrap .all-more.open {
+    transform: rotate(180deg);
 }
 
 .menu-more {
@@ -261,10 +284,156 @@ header .menu-wrap {
     left: 0;
     z-index: 3;
     transform: translateX(-100%);
+    overflow-y: auto;
+}
+
+.left-menu .close {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    top: 38px;
+    padding: 0 !important;
+    font-size: 0;
+}
+
+.left-menu .close::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url('/assets/images/ico-close.png') no-repeat;
+    background-size: 100% auto;
+    content: "";
 }
 
 .left-menu.active {
     transform: translateX(0);
+}
+
+.left-menu .user-wrap {
+    padding: 32px 16px 16px;
+    border-bottom: 1px solid #ddd !important;
+    background: #fff;
+}
+
+.left-menu .user {
+    display: flex;
+    gap: 6px;
+    padding: 14px 0;
+}
+
+.left-menu .user-wrap .login-p {
+    display: block;
+    color: #77797E;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.05em;
+    padding-top: 15px;
+}
+
+.left-menu .menu-wrapper {
+    padding: 15px
+}
+
+.left-menu .left-menu-all {
+    padding: 11px 0 11px;
+}
+
+.left-menu .left-menu-all li {
+    position: relative;
+}
+
+.left-menu .left-menu-all a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.left-menu .left-menu-all.board_area {
+    border-top: 1px solid #ccc
+}
+
+.left-menu .left-menu-all .title:after {
+    content: '';
+    display: block;
+    transition-duration: .3s;
+    width: 30px;
+    height: 28px;
+    background: url('/assets/images/ico-open.png') no-repeat center/28px auto;
+}
+
+.left-menu .left-menu-all .title.on:after {
+    transform: rotate(180deg);
+}
+
+.left-menu .left-menu-all .menu-ul2 {
+    display: none;
+
+}
+
+.left-menu .left-menu-all .menu-ul2 li a {
+    display: block;
+    padding: 11px 0;
+    color: #848484;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+.left-menu .user li a {
+    width: auto;
+    height: auto;
+    padding: 10px 26px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.left-menu .user li a.login {
+    background: #0e0e0e;
+    border: 1px solid #000;
+}
+
+.left-menu .user li a.join {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333 !important;
+}
+
+.left-menu .brand_tab_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.left-menu .brand_tab_box a {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 50%;
+    background: #F2F2F2;
+    padding: 14px 0;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #777;
 }
 
 .dimmed {
@@ -277,6 +446,6 @@ header .menu-wrap {
 
 .dimmed.active {
     opacity: 1;
-    z-index: 2;
+    z-index: 3;
     visibility: visible
 }
