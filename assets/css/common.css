@@ -1,0 +1,131 @@
+.swiper-wrapper {
+    z-index: 0
+}
+
+.cate-swiper {
+    overflow-x: hidden;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 5% 0;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.review-tit {
+    color: #8e1f29 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+}
+
+.text_line2 {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+.sale_percent {
+    color: #8E1F29 !important;
+    font-weight: 500 !important;
+}
+
+.sale_prc {
+    color: #333 !important;
+    padding: 0;
+    font-size: 15px !important;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    vertical-align: top;
+    font-family: 'Gilroy', 'NotoSansKR', sans-serif;
+}
+
+.sell_prc {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+    color: #8d8d8d !important;
+    margin-left: 5px;
+}
+
+.ranking-num {
+    margin-top: 10px;
+}
+
+.ranking {
+    display: inline-block;
+    color: #8e1f28;
+    border: 1px solid rgba(142, 31, 41, 0.5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 6px 4px 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 1;
+    opacity: 1;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+
+.numbering {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 30px;
+    height: 29px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.new {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #b75522;
+    padding: 5px 8px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.btn-allview {
+    margin: 0 16px 60px;
+    text-align: center;
+}
+
+.btn-allview a {
+    padding: 16px 0;
+    border: 1px solid #C8CBD2;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-allview a:after {
+    content: url(/assets/images/arrow_right.png);
+}
+
+.btn-allview a span {
+    color: #C86733;
+    margin-right: 5px;
+}

@@ -1,15 +1,34 @@
 $(function () {
-    history.scrollRestoration = "auto"
+    history.scrollRestoration = "auto";
     //왼편 메뉴
-    $('.category').click(function () {
-        $('.left-menu').addClass('active');
-        $('.dimmed').addClass('active');
-        $('body').addClass('hidden')
-    }); $('.close , .dimmed').click(function () {
-        $('.left-menu').removeClass('active');
-        $('.dimmed').removeClass('active');
-        $('body').removeClass('hidden')
-    })
+    $(document).ready(function () {
+        $('.category').click(function () {
+            $('.left-menu').addClass('active');
+            $('.dimmed').addClass('active');
+            $('body').addClass('hidden')
+        }); $('.close , .dimmed').click(function () {
+            $('.left-menu').removeClass('active');
+            $('.dimmed').removeClass('active');
+            $('body').removeClass('hidden')
+        });
+        $('.up').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+    });
+    //퀵메뉴
+    let lastScroll = 0;
+    $(window).scroll(function () {
+        curr = $(this).scrollTop();
+        if (curr > lastScroll
+
+        ) {
+            $('.quick').removeClass('show')
+        } else {
+            $('.quick').addClass('show')
+        }
+        lastScroll = curr
+    });
 
     // 마우스 휠 이벤트에 대한 핸들러 추가
     window.addEventListener('wheel', function (event) {
@@ -66,8 +85,6 @@ $(function () {
         $(tabName).addClass('active').siblings().removeClass('active')
     })
 
-<<<<<<< HEAD
-=======
     //swiper
     const swiper = new Swiper('.swiper', {
         effect: 'fade',
@@ -118,5 +135,4 @@ $(function () {
             clickable: true,
         },
     });
->>>>>>> e0f6b2970966d86effe37b32e5f9362e1b829cdc
 })

@@ -4,7 +4,6 @@
 
 .main-slide {
     position: relative;
-    z-index: -1;
 }
 
 .mainslide {
@@ -175,114 +174,6 @@
     padding-bottom: 50px;
 }
 
-.best .best-menu-list .review-tit {
-    color: #8e1f29 !important;
-    font-size: 13px !important;
-    font-weight: 600 !important;
-    line-height: 1 !important;
-}
-
-.best .best-menu-list .text_line2 {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: -0.05em;
-}
-
-.best .best-menu-list .sale_percent {
-    display: none;
-    color: #8E1F29 !important;
-    font-weight: 500 !important;
-    margin-right: 5px;
-    vertical-align: top;
-}
-
-.best .best-menu-list .sale_prc {
-    color: #333 !important;
-    padding: 0;
-    font-size: 15px !important;
-    line-height: 16px;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-    vertical-align: top;
-    font-family: 'Gilroy', 'NotoSansKR', sans-serif;
-}
-
-.best .best-menu-list .sell_prc {
-    font-size: 13px !important;
-    line-height: 18px !important;
-    font-weight: 400 !important;
-    color: #8d8d8d !important;
-    margin-left: 5px;
-}
-
-.best .best-menu-list .ranking {
-    display: inline-block;
-    border: 1px solid rgba(142, 31, 41, 0.5);
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 5px 6px 4px 6px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    line-height: 1;
-    opacity: 1;
-}
-
-.best .best-menu-list li img {
-    width: 100%;
-}
-
-.best .best-menu-list .numbering {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    width: 30px;
-    height: 29px;
-    line-height: 30px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.best .best-menu-list li .info {
-    padding: 15px 33px 0;
-    text-align: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.best .tab-list .btn-allview {
-    margin: 0 16px 60px;
-    text-align: center;
-}
-
-.best .tab-list .btn-allview a {
-    padding: 16px 0;
-    border: 1px solid #C8CBD2;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 120%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.best .tab-list .btn-allview a:after {
-    content: url(/assets/images/arrow_right.png);
-}
-
-.best .tab-list .btn-allview a span {
-    color: #C86733;
-    margin-right: 5px;
-}
-
 .brand-story {
     display: block;
     position: relative;
@@ -347,6 +238,7 @@
 .banner-slide .swiper-pagination-fraction {
     position: absolute;
     top: 6px;
+    z-index: 1;
     right: 12px;
     bottom: auto;
     left: auto;
@@ -406,6 +298,17 @@
 
 .lookbook .box-list li {
     display: flex;
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.lookbook .box-list {
+    padding: 0 16px;
+}
+
+.lookbook .box-list li+li {
+    border-top: 1px solid #f3f3f3;
 }
 
 .lookbook .box-list li .list-img {
@@ -496,4 +399,87 @@
     font-size: 13px;
     font-weight: 400;
     padding-top: 0px;
+}
+
+.cate-item {
+    position: relative;
+    padding-left: 15px;
+    margin: 30px 0;
+}
+
+.cate-item .cate-swiper {
+    margin-top: 30px;
+}
+
+.cate-item .cate-name {
+    display: inline-block;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.cate-item .cate-more {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 14px;
+}
+
+.cate-item .cate-more:after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    background-image: url(/assets/images/ico-more.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: center;
+}
+
+.card a {
+    display: block;
+    padding: 65px 20px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.membership {
+    background-image: url(/assets/images/img-member.jpg);
+}
+
+.offline {
+    background-image: url(/assets/images/img-off.jpg);
+}
+
+.card .tit {
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.card .desc {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 15px 0 30px;
+    box-sizing: border-box;
+}
+
+
+
+.card span {
+    border: 1px solid #fff;
+    padding: 7px 25px 8px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    display: inline-block;
+    box-sizing: border-box;
 }
