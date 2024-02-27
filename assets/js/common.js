@@ -1,9 +1,15 @@
 $(function () {
-
-
-
-
-    history.scrollRestoration = "manual"
+    history.scrollRestoration = "auto"
+    //왼편 메뉴
+    $('.category').click(function () {
+        $('.left-menu').addClass('active');
+        $('.dimmed').addClass('active');
+        $('body').addClass('hidden')
+    }); $('.close , .dimmed').click(function () {
+        $('.left-menu').removeClass('active');
+        $('.dimmed').removeClass('active');
+        $('body').removeClass('hidden')
+    })
 
     // 마우스 휠 이벤트에 대한 핸들러 추가
     window.addEventListener('wheel', function (event) {
@@ -60,4 +66,57 @@ $(function () {
         $(tabName).addClass('active').siblings().removeClass('active')
     })
 
+<<<<<<< HEAD
+=======
+    //swiper
+    const swiper = new Swiper('.swiper', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+    const imgswiper = new Swiper('.mainslide', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+    const bannerSlide = new Swiper(".banner-slide", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination-fraction",
+            type: "fraction",
+        },
+
+    });
+    const pickSwiper = new Swiper(".pick-swiper", {
+        spaceBetween: 10,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+
+        },
+    });
+    const cateSwiper = new Swiper(".cate-swiper", {
+        slidesPerView: 2.2,
+        spaceBetween: 10,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+>>>>>>> e0f6b2970966d86effe37b32e5f9362e1b829cdc
 })
