@@ -355,3 +355,84 @@
     flex: 1;
     padding: 0 28px;
 }
+
+.recopick h2 {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Gilroy', 'NotoSansKR', Malgun Gothic, '맑은 고딕', Dotum, '돋움', sans-serif;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    border-color: #ffffff;
+    color: #000000;
+    padding: 50px 1% 22px;
+}
+
+.recopick .pick-swiper {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    z-index: 0;
+    padding: 20px 0;
+}
+
+.recopick .pick-swiper .swiper-scrollbar {
+    position: absolute;
+    bottom: 0px;
+    width: 180px;
+    left: 50%;
+    height: 2px;
+    z-index: 1;
+    transform: translateX(-50%);
+    --swiper-scrollbar-border-radius: 10px;
+    --swiper-scrollbar-top: auto;
+    --swiper-scrollbar-bottom: 4px;
+    --swiper-scrollbar-left: auto;
+    --swiper-scrollbar-right: 4px;
+    --swiper-scrollbar-sides-offset: 1%;
+    --swiper-scrollbar-size: 4px;
+}
+
+.recopick .pick-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.recopick .pick-group .item-list {}
+
+.recopick .pick-group .item-list .item-name {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.2;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    margin: 21px auto 10px;
+}
+
+.recopick .pick-group .item-list .item-prc {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left !important;
+    display: inline-block;
+    padding-left: -5px;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    padding-bottom: 35px;
+}
+
+.recopick .pick-group .item-list .item-prc .sale-prc {
+    color: #222222;
+    padding-right: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.recopick .pick-group .item-list .item-prc .org-prc {
+    float: right;
+    color: #777777;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 0px;
+}

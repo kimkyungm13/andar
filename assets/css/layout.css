@@ -449,3 +449,127 @@ header .menu-wrap {
     z-index: 3;
     visibility: visible
 }
+
+footer {
+    margin: 0;
+    background: #fafafa;
+    padding: 30px 16px 30px;
+}
+
+footer * {
+    color: #555;
+    font-family: 'Gilroy', 'NotoSansKR', sans-serif;
+    line-height: 20px;
+}
+
+footer a.f_logo {
+    display: block;
+    width: 90px;
+    padding-bottom: 10px;
+}
+
+footer .cs-box {
+    padding-bottom: 20px;
+}
+
+footer .cs-box .center {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-top: 24px;
+    padding-bottom: 5px;
+}
+
+footer .cs-box .number {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+footer .cs-box .time span {
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+footer .sns {
+    display: flex;
+    gap: 25px;
+}
+
+footer .sns img {
+    height: 22px;
+}
+
+footer .menu {
+    display: flex;
+    gap: 0px 15px;
+    flex-wrap: wrap;
+    padding: 12px 0 12px;
+}
+
+footer .menu li {
+    display: flex;
+    align-items: center;
+}
+
+footer .menu li a {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #777;
+    padding: 4px 0 !important;
+    font-weight: 700;
+}
+
+footer .menu li:after {
+    content: '';
+    display: inline;
+    margin-left: 10px;
+    height: 12px;
+    border-left: 1px solid rgb(184, 184, 184)
+}
+
+footer .menu li:first-child:before {
+    display: none;
+}
+
+footer .info p {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #777;
+}
+
+footer .copyright {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: #777;
+    padding: 30px 0 0;
+}
+
+footer .support {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    margin-top: 24px;
+
+}
+
+footer .support li>a {
+    display: block;
+}
+
+footer .support li>a.ftc {
+    width: 45px;
+}
+
+footer .support li>a.symatec {
+    width: 36px;
+}
+
+footer .support li>a.kg {
+    width: 27px;
+}
