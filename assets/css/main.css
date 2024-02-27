@@ -138,6 +138,13 @@
     margin-bottom: 22px;
 }
 
+.best .tab-list {
+    display: none;
+}
+
+.best .tab-list.active {
+    display: block;
+}
 
 
 .best .best-menu li a {
@@ -166,6 +173,60 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+}
+
+.best .best-menu-list .review-tit {
+    color: #8e1f29 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+}
+
+.best .best-menu-list .text_line2 {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+.best .best-menu-list .sale_percent {
+    display: none;
+    color: #8E1F29 !important;
+    font-weight: 500 !important;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.best .best-menu-list .sale_prc {
+    color: #333 !important;
+    padding: 0;
+    font-size: 15px !important;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    vertical-align: top;
+    font-family: 'Gilroy', 'NotoSansKR', sans-serif;
+}
+
+.best .best-menu-list .sell_prc {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+    color: #8d8d8d !important;
+    margin-left: 5px;
+}
+
+.best .best-menu-list .ranking {
+    display: inline-block;
+    border: 1px solid rgba(142, 31, 41, 0.5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 6px 4px 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 1;
+    opacity: 1;
 }
 
 .best .best-menu-list li img {

@@ -51,5 +51,13 @@ $(function () {
         e.preventDefault();
         $(this).toggleClass('on').siblings('').stop().slideToggle()
 
+    });
+    $('.best-menu a').click(function (e) {
+        e.preventDefault();
+        tabName = $(this).data('tab')
+        $('.best-menu a').removeClass('active');
+        $(this).addClass('active');
+        $(tabName).addClass('active').siblings().removeClass('active')
     })
+
 })
