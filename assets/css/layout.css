@@ -200,8 +200,7 @@ header.wheel .menu-wrap {
     background: #fff;
 }
 
-header.wheel .menu-wrap .menu-list,
-header.wheel .menu-wrap .menu-tit {
+header.wheel .menu-wrap .menu-list {
     display: flex;
     gap: 10px;
     padding: 11px 0 11px 15px;
@@ -238,7 +237,7 @@ header.wheel .menu-wrap .all-more.open {
     display: block
 }
 
-.menu-more.active .menu-all {
+.menu-more .menu-all {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -251,7 +250,7 @@ header.wheel .menu-wrap .all-more.open {
     border-top: 1px solid #dcdcdc;
 }
 
-.menu-more.active .menu-all a {
+.menu-more .menu-all a {
     display: inline-block;
     padding: 8px 17px;
     margin: 3px 3px;
@@ -293,7 +292,8 @@ header.wheel .menu-wrap .menu-list a {
     vertical-align: middle;
 }
 
-.menu-more .menu-tit {
+.menu-nav .menu-tit {
+    display: none;
     font-size: 16px;
     line-height: 23px;
     color: #000;
@@ -302,6 +302,15 @@ header.wheel .menu-wrap .menu-list a {
     box-sizing: border-box;
     position: relative;
     background: #fff;
+
+    gap: 10px;
+    padding: 11px 0 11px 15px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background: #fff;
+    width: calc(100% - 33px);
+    white-space: nowrap;
 }
 
 header.wheel h1 a {

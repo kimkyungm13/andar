@@ -59,18 +59,18 @@ $(function () {
 
     // .all-more 요소의 클릭 이벤트 핸들러 (이벤트 위임)
     $(document).on('click', '.all-more', function () {
-        var menuNav = $('.menu-nav');
+        var menuNav = $('.menu-list');
         if (menuNav.css('display') === 'none') {
             // 현재 메뉴가 숨겨진 상태일 때
-            menuNav.css('display', 'block');
-
+            menuNav.css('display', 'flex');
+            $('.menu-tit').css('display', '')
 
         } else {
             // 현재 메뉴가 표시된 상태일 때
             menuNav.css('display', 'none');
+            $('.menu-tit').css('display', 'block')
         }
-        $('.menu-more').toggleClass('active');
-        $('.all-more').toggleClass('open');
+        $('.menu-more').stop().slideToggle();
     });
     $('.left-menu-all .title').click(function (e) {
         e.preventDefault();
