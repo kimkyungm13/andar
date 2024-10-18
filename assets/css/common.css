@@ -122,7 +122,7 @@
 }
 
 .btn-allview a:after {
-    content: url(/assets/images/arrow_right.png);
+    content: url(../images/arrow_right.png);
 }
 
 .btn-allview a span {

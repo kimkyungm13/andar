@@ -290,7 +290,7 @@
     line-height: 20px;
     letter-spacing: -0.03em;
     font-weight: 500;
-    background-image: url(/assets/images/ico-move.png);
+    background-image: url(../images/ico-move.png);
     background-repeat: no-repeat;
     background-size: 15px auto;
     background-position: calc(100% - 18px) center;
@@ -431,7 +431,7 @@
     width: 15px;
     height: 11px;
     margin-left: 3px;
-    background-image: url(/assets/images/ico-more.png);
+    background-image: url(../images/ico-more.png);
     background-repeat: no-repeat;
     background-size: 15px auto;
     background-position: center;
@@ -446,11 +446,11 @@
 }
 
 .membership {
-    background-image: url(/assets/images/img-member.jpg);
+    background-image: url(../images/img-member.jpg);
 }
 
 .offline {
-    background-image: url(/assets/images/img-off.jpg);
+    background-image: url(../images/img-off.jpg);
 }
 
 .card .tit {

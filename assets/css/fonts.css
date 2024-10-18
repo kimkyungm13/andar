@@ -1,105 +1,105 @@
 @font-face {
     font-family: 'Montserrat';
     font-weight: 400;
-    src: local(※), url('/common/Montserrat-Regular.woff') format('woff'), url('/common/Montserrat-Regular.ttf') format('truetype');
+    src: local(※), url('../common/Montserrat-Regular.woff') format('woff'), url('../common/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-weight: 500;
-    src: local(※), url('/common/Montserrat-Medium.woff') format('woff'), url('/common/Montserrat-Medium.ttf') format('truetype');
+    src: local(※), url('../common/Montserrat-Medium.woff') format('woff'), url('../common/Montserrat-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-weight: 600;
-    src: local(※), url('/common/Montserrat-SemiBold.woff') format('woff'), url('/common/Montserrat-SemiBold.ttf') format('truetype');
+    src: local(※), url('../common/Montserrat-SemiBold.woff') format('woff'), url('../common/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-weight: 700;
-    src: local(※), url('/common/Montserrat-Bold.woff') format('woff'), url('/common/Montserrat-Bold.ttf') format('truetype');
+    src: local(※), url('../common/Montserrat-Bold.woff') format('woff'), url('../common/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
     font-weight: 300;
-    src: local(※), url('/common/NotoSansKR-Light-Hestia.woff') format('woff'), url('/common/NotoSansKR-Light-Hestia.otf') format('opentype');
+    src: local(※), url('../common/NotoSansKR-Light-Hestia.woff') format('woff'), url('../common/NotoSansKR-Light-Hestia.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
     font-weight: 400;
-    src: local(※), url('/common/NotoSansKR-Regular-Hestia.woff') format('woff'), url('/common/NotoSansKR-Regular-Hestia.otf') format('opentype');
+    src: local(※), url('../common/NotoSansKR-Regular-Hestia.woff') format('woff'), url('../common/NotoSansKR-Regular-Hestia.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
     font-weight: 500;
-    src: local(※), url('/common/NotoSansKR-Medium-Hestia.woff') format('woff'), url('/common/NotoSansKR-Medium-Hestia.otf') format('opentype');
+    src: local(※), url('../common/NotoSansKR-Medium-Hestia.woff') format('woff'), url('../common/NotoSansKR-Medium-Hestia.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'NotoSansKR';
     font-weight: 700;
-    src: local(※), url('/common/NotoSansKR-Bold-Hestia.woff') format('woff'), url('/common/NotoSansKR-Bold-Hestia.otf') format('opentype');
+    src: local(※), url('../common/NotoSansKR-Bold-Hestia.woff') format('woff'), url('../common/NotoSansKR-Bold-Hestia.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Gilroy';
     font-weight: 400;
-    src: url('/common/font/Gilroy-Regular.eot');
-    src: url('/common/font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), url('/common/font/Gilroy-Regular.woff2') format('woff2'), url('/common/font/Gilroy-Regular.woff') format('woff'), url('/common/font/Gilroy-Regular.ttf') format('truetype');
+    src: url('../common/font/Gilroy-Regular.eot');
+    src: url('../common/font/Gilroy-Regular.eot?#iefix') format('embedded-opentype')
 }
 
 @font-face {
     font-family: 'Gilroy';
     font-weight: 500;
-    src: url('/common/font/Gilroy-Medium.eot');
-    src: url('/common/font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), url('/common/font/Gilroy-Medium.woff2') format('woff2'), url('/common/font/Gilroy-Medium.woff') format('woff'), url('/common/font/Gilroy-Medium.ttf') format('truetype');
+    src: url('../common/font/Gilroy-Medium.eot');
+    src: url('../common/font/Gilroy-Medium.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'Gilroy';
     font-weight: 600;
-    src: url('/common/font/Gilroy-SemiBold.eot');
-    src: url('/common/font/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'), url('/common/font/Gilroy-SemiBold.woff2') format('woff2'), url('/common/font/Gilroy-SemiBold.woff') format('woff'), url('/common/font/Gilroy-SemiBold.ttf') format('truetype');
+    src: url('../common/font/Gilroy-SemiBold.eot');
+    src: url('../common/font/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'Gilroy';
     font-weight: 700;
-    src: url('/common/font/Gilroy-Bold.eot');
-    src: url('/common/font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('/common/font/Gilroy-Bold.woff2') format('woff2'), url('/common/font/Gilroy-Bold.woff') format('woff'), url('/common/font/Gilroy-Bold.ttf') format('truetype');
+    src: url('../common/font/Gilroy-Bold.eot');
+    src: url('../common/font/Gilroy-Bold.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'Campton';
     font-weight: 100;
-    src: local(※), url('/common/font/cp_thin.woff') format('woff')
+    src: local(※), url('../common/font/cp_thin.woff') format('woff')
 }
 
 @font-face {
     font-family: 'Campton';
     font-weight: 300;
-    src: local(※), url('/common/font/cp_light.woff') format('woff')
+    src: local(※), url('../common/font/cp_light.woff') format('woff')
 }
 
 @font-face {
     font-family: 'Campton';
     font-weight: 400;
-    src: local(※), url('/common/font/cp_book.woff') format('woff')
+    src: local(※), url('../common/font/cp_book.woff') format('woff')
 }
 
 @font-face {
     font-family: 'Campton';
     font-weight: 500;
-    src: local(※), url('/common/font/cp_medium.woff') format('woff')
+    src: local(※), url('../common/font/cp_medium.woff') format('woff')
 }
 
 @font-face {
     font-family: 'Campton';
     font-weight: 600;
-    src: local(※), url('/common/font/cp_black.woff') format('woff')
+    src: local(※), url('../common/font/cp_black.woff') format('woff')
 }

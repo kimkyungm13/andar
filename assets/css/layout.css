@@ -1,6 +1,6 @@
-@import url(/assets/css/reset.css);
-@import url(/assets/css/common.css);
-@import url(/assets/css/fonts.css);
+@import './fonts.css';
+@import './reset.css';
+@import './common.css';
 
 body {
     position: relative;
@@ -42,7 +42,7 @@ body {
     display: block;
     margin: 10px 15px 0;
     width: 30px;
-    background: url(/assets/images/ico-chat.png) no-repeat;
+    background: url(../images/ico-chat.png) no-repeat;
     height: 27px;
     background-size: cover;
 }
@@ -58,7 +58,7 @@ body {
     height: 35px;
     width: 24px;
     box-sizing: border-box;
-    background: url(/assets/images/ico-top.png) no-repeat;
+    background: url(../images/ico-top.png) no-repeat;
     font-size: 0;
     display: flex;
     background-size: 100%;
@@ -81,12 +81,20 @@ body {
     color: #fff
 }
 
+.top-banner a .top_talk {
+    display: block;
+    margin-left: 5px;
+    width: 17px;
+    height: 18px;
+    background: url(../images/ico-topk.png) no-repeat;
+}
+
 .top-banner a .arrow_wh {
     display: block;
     margin-left: 5px;
     width: 8px;
     height: 13px;
-    background: url(/assets/images/ico-arrow.png) no-repeat;
+    background: url(../images/ico-arrow.png) no-repeat;
 }
 
 .container {}
@@ -136,7 +144,7 @@ header .gnb h1 a {
     width: 87px;
     height: 23px;
     margin: 0 auto;
-    background: url('/assets/images/img-logo-w.svg') no-repeat
+    background: url('../images/img-logo-w.svg') no-repeat
 }
 
 
@@ -147,7 +155,7 @@ header .gnb .category:after {
     display: block;
     content: '';
     overflow: hidden;
-    background: url("/assets/images/ico-cate_w.svg") no-repeat 0 0;
+    background: url("../images/ico-cate_w.svg") no-repeat 0 0;
 }
 
 header .gnb .search:after {
@@ -156,7 +164,7 @@ header .gnb .search:after {
     display: block;
     content: '';
     overflow: hidden;
-    background: url("/assets/images/ico-search_w.svg") no-repeat 0 0;
+    background: url("../images/ico-search_w.svg") no-repeat 0 0;
 }
 
 header .gnb .setting:after {
@@ -165,7 +173,7 @@ header .gnb .setting:after {
     display: block;
     content: '';
     overflow: hidden;
-    background: url("/assets/images/ico-user_w.svg") no-repeat 0 0;
+    background: url("../images/ico-user_w.svg") no-repeat 0 0;
 }
 
 header .gnb .order:after {
@@ -174,7 +182,7 @@ header .gnb .order:after {
     display: block;
     content: '';
     overflow: hidden;
-    background: url("/assets/images/ico-shop_w.svg") no-repeat
+    background: url("../images/ico-shop_w.svg") no-repeat
 }
 
 
@@ -185,7 +193,7 @@ header.wheel {
     background: #fff;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 header.wheel .gnb {
@@ -218,7 +226,7 @@ header.wheel .menu-wrap .all-more {
     display: inline-block;
     width: 28px;
     height: 28px;
-    background: url(/assets/images/ico-mopen.png) no-repeat;
+    background: url(../images/ico-mopen.png) no-repeat;
     background-size: 12px auto;
     background-position: center;
 }
@@ -314,26 +322,26 @@ header.wheel .menu-wrap .menu-list a {
 }
 
 header.wheel h1 a {
-    background: url('/assets/images/img-logo-b.svg') no-repeat
+    background: url('../images/img-logo-b.svg') no-repeat
 }
 
 header.wheel .category:after {
-    background: url("/assets/images/ico-cate.svg") no-repeat 0 0;
+    background: url("../images/ico-cate.svg") no-repeat 0 0;
 }
 
 header.wheel .search:after {
 
-    background: url("/assets/images/ico-search.svg") no-repeat 0 0;
+    background: url("../images/ico-search.svg") no-repeat 0 0;
 }
 
 header.wheel .setting:after {
 
-    background: url("/assets/images/ico-user.svg") no-repeat 0 0;
+    background: url("../images/ico-user.svg") no-repeat 0 0;
 }
 
 header.wheel .order:after {
 
-    background: url("/assets/images/ico-shop.svg") no-repeat
+    background: url("../images/ico-shop.svg") no-repeat
 }
 
 header .menu-wrap {
@@ -373,7 +381,7 @@ header .menu-wrap {
     left: 0;
     width: 24px;
     height: 24px;
-    background: url('/assets/images/ico-close.png') no-repeat;
+    background: url('../images/ico-close.png') no-repeat;
     background-size: 100% auto;
     content: "";
 }
@@ -437,7 +445,7 @@ header .menu-wrap {
     transition-duration: .3s;
     width: 30px;
     height: 28px;
-    background: url('/assets/images/ico-open.png') no-repeat center/28px auto;
+    background: url('../images/ico-open.png') no-repeat center/28px auto;
 }
 
 .left-menu .left-menu-all .title.on:after {
